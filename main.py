@@ -23,7 +23,7 @@ for i in range(90):
     x2del = x2max - x02
     x3del = x3max - x03
 
-    cou = 0
+    
 
     xAveragemax = (x1max + x2max + x3max) / 3
     xAveragemin = (x1min + x2min + x3min) / 3
