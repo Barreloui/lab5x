@@ -275,6 +275,6 @@ for i in range(90):
     if Fp > Ft:
         print("Fp=", round(Fp, 2), ">Ft", Ft, "Рівняння неадекватно оригіналу")
     else:
-        cou = cou + 1
+       
         print("Fp=", round(Fp, 2), "<Ft", Ft, "Рівняння адекватно оригіналу")
 
