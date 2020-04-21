@@ -2,6 +2,7 @@ import random
 import numpy as np
 import copy
 import math
+import random
 
 # варіант 303
 
@@ -23,7 +24,6 @@ for i in range(90):
     x2del = x2max - x02
     x3del = x3max - x03
 
-    
 
     xAveragemax = (x1max + x2max + x3max) / 3
     xAveragemin = (x1min + x2min + x3min) / 3
@@ -274,7 +274,15 @@ for i in range(90):
 
     if Fp > Ft:
         print("Fp=", round(Fp, 2), ">Ft", Ft, "Рівняння неадекватно оригіналу")
+        pl=random.uniform(-1,1)
+        x1min =x1min*pl
+        x1max *= pl
+        x2min *= pl
+        x2max *= pl
+        x3min *= pl
+        x3max *= pl
+        print(x1max,x2min,x2max,x3min,x3max)
     else:
-       
+
         print("Fp=", round(Fp, 2), "<Ft", Ft, "Рівняння адекватно оригіналу")
 
